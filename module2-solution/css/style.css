@@ -1,1 +1,81 @@
-
+/* Base Styles */
+*{
+	box-sizing: border-box;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	
+}
+body{
+	font-family: Helvetica, Arial, sans-serif;
+}
+h1{
+	font-size: 175%;
+	text-align: center;
+	margin: 25px 5px 40px 5px;
+}
+.Sec1, .Sec2, .Sec3{
+	font-size: 1.25em;
+	padding: 5px 25px 5px 25px;
+ 	border: 1px solid black;
+}
+.container{
+	position: relative;
+	border: 1px solid black;
+	margin: 10px 10px 5px 10px;
+	background-color: #9E9E9E;
+}
+.content{
+	padding: 40px 10px 10px 10px;
+}
+.Sec1{
+	background-color: #FF9A98;
+}
+.Sec2{
+	background-color: #FF6865;
+}
+.Sec3{
+	background-color: #ADD8E6;
+}
+/* DESKTOP VERSION */
+@media (min-width: 992px){
+	.col-lg-4 {
+		float: left;
+    	width: 33.33%;
+ 	}
+ 	.Sec1, .Sec2, .Sec3{
+ 		position: absolute;
+ 		right: 0px;
+ 	}
+}
+/* TABLET VERSION */
+@media (min-width: 768px) and (max-width: 991px){
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+	.col-md-6{
+	    width: 50%;
+	}
+	.col-md-12{
+		width: 100%;
+	}
+	.Sec1, .Sec2{
+		position: absolute;
+		right: 0px;
+	}
+	.Sec3{
+		position: absolute;
+		right: 0px;
+	}
+}
+/* MOBILE VERSION */
+@media (max-width: 767px){
+	.col-sm-12{
+		float: left;
+		width: 100%;
+	}
+	.Sec1, .Sec2, .Sec3{
+		position: absolute;
+ 		right: 0px;
+ 	}
+}
